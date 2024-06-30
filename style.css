@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
+
+
+*
+{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: arya;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+li
+{
+    list-style: none;
+}
+
+.container
+{
+    /* background-color: antiquewhite; */
+    padding: 0.8rem 1.2rem;
+}
+
+.navbar-content
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h3
+{
+    letter-spacing: 1px;
+    color: black;
+    filter: drop-shadow(2px 2px 2px blueviolet);
+    font-family: dosis;
+}
+
+.navitem
+{
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+#navbutton
+{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+    transition: all 0.4s ease;
+}
+
+#navbutton:hover
+{
+box-shadow: rgb(173, 136, 206) 0px 3px 12px;
+}
+
+.nav-link:hover
+{
+transition: all 0.3s ease;
+color: blueviolet;
+}
+
+#menu-icon
+{
+    display: none;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width:644px) {
+    .navitem
+    {
+        display:none;
+    }
+
+    #menu-icon
+    {
+        display: block;
+    }
+}
+
+/* header */
+
+.header-content
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 4rem;
+}
+
+.bgtext
+{
+    background-color:#FFF8F5;
+    color: red;
+    padding: 0.4rem 1.6rem;
+    border-radius:25px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.bgtext img
+{
+    width: 1.2rem;
+}
+
+
+.main-text
+{
+    text-align: center;
+    width: 60%;
+}
+
+.main-text h1
+{
+    font-size: 3.4rem;
+    font-family: dosis;
+}
+
+#blue
+{
+    color: blueviolet;
+    font-family: dosis;
+}
+
+.button-container
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button-container button
+{
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:nth-child(2)
+{
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.images
+{
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    padding: 0.6rem;
+    max-width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+#company-logo
+{
+    width: 2rem;
+}
+
+
+
+
+@media screen and (max-width:540px) {
+    .main-text
+    {
+        width: 80%;
+    }
+
+    .main-text h1
+    {
+        font-size: 3.1rem;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .main-text
+    {
+        width: 100%;
+    }
+
+    .main-text h1
+    {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .button-container
+    {
+        gap: 1rem;
+    }
+}
+
+
+
+
+
+
+
