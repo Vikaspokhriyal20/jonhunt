@@ -222,6 +222,92 @@ button:nth-child(2)
     }
 }
 
+.card-content
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card-content h1
+{
+    letter-spacing: 1px;
+    font-family: dosis;
+    font-size: 2.4rem;
+}
+
+.card-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.card
+{
+    text-align: left;
+    padding: 1rem 1.2rem;
+    box-shadow: rgba(84, 85, 87, 0.2) 0px 8px 24px;
+}
+
+.fa-user
+{
+    color: orangered;
+    font-size: 1.4rem;
+    background-color: #FFF8F5;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+
+.fa-magnifying-glass
+{
+    color: #6A38C2;
+    font-size: 1.4rem;
+    background-color: #E9DDFF;
+    padding: 0.6rem;
+    border-radius: 50%;
+   
+}
+
+.fa-file
+{
+    color: #5D5D5D;
+    font-size: 1.4rem;
+    background-color: #F0FFFE;
+    padding: 0.6rem;
+    border-radius: 50%; 
+}
+
+.fa-briefcase
+{
+    color: #FBBC09;
+    font-size: 1.4rem;
+    background-color:#FFF8E3;
+    padding: 0.6rem;
+    border-radius: 50%; 
+}
+
+.card h4
+{
+    margin-top: 1.2rem;
+}
+
+@media screen and (max-width:850px) {
+    .card-container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .card-container
+    {
+        grid-template-columns: 1fr ;
+    }
+}
+
 
 
 
