@@ -7,15 +7,20 @@
 margin:0;
 padding: 0;
 box-sizing: border-box;
-font-family: arya;
+font-family: arya , monospace;
 }
 
 a
 {
     text-decoration: none;
-    color: black;
+    color: #636161;
     letter-spacing: 1px;
     font-size: 1.1rem;
+}
+
+p
+{
+    color: #636161;
 }
 
 li
@@ -103,13 +108,12 @@ color: blueviolet;
     align-items: center;
     flex-direction: column;
     gap: 1.2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .bgtext
 {
     background-color:#FFF8F5;
-    color: red;
     padding: 0.4rem 1.6rem;
     border-radius:25px;
     letter-spacing: 1px;
@@ -118,11 +122,15 @@ color: blueviolet;
     gap: 0.2rem;
 }
 
+.bgtext p
+{
+    color: red;
+}
+
 .bgtext img
 {
     width: 1.2rem;
 }
-
 
 .main-text
 {
@@ -226,7 +234,7 @@ button:nth-child(2)
 {
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -235,6 +243,7 @@ button:nth-child(2)
     letter-spacing: 1px;
     font-family: dosis;
     font-size: 2.4rem;
+    padding-bottom: 0.4rem;
 }
 
 .card-container
@@ -242,14 +251,15 @@ button:nth-child(2)
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .card
 {
     text-align: left;
     padding: 1rem 1.2rem;
-    box-shadow: rgba(84, 85, 87, 0.2) 0px 8px 24px;
+    box-shadow: #FFF8F5 0px 8px 24px;
+    border-radius: 4px;
 }
 
 .fa-user
@@ -292,6 +302,7 @@ button:nth-child(2)
 .card h4
 {
     margin-top: 1.2rem;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width:850px) {
@@ -307,6 +318,81 @@ button:nth-child(2)
         grid-template-columns: 1fr ;
     }
 }
+
+
+.career-content
+{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.career-header h1
+{
+    font-size: 2.4rem;
+}
+
+.option-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.option-card
+{
+    box-shadow: #FFF8F5 0px 8px 24px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align:left;
+    transition: all 1s;
+
+}
+
+.option-card h4
+{
+    margin-top: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.option-card i
+{
+    background-color:#FFF8E3;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    color: orangered;
+    border-radius: 5px;
+}
+
+.option-card:hover
+{
+    box-shadow: orchid 0px 8px 24px;
+}
+
+@media screen and (max-width:732px) {
+    .option-container
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:502px) {
+    .option-container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:344px) {
+    .option-container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 
 
